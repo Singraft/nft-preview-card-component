@@ -1,0 +1,117 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: hsl(216, 560%, 16%);
+    border: none;
+    width: 300px;
+    height: 550px;
+}
+
+.equilibrium{
+    display: flex;
+    max-height: 280px;
+}
+
+.image-equilibrium{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 92%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.text h3{
+    color: hsl(0, 0%, 100%);
+}
+
+.text p{
+    text-align: left;
+    margin-top: 0;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%)
+}
+
+.eth-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.eth{
+    color: hsl(178, 100%, 50%); 
+}
+
+.eth-icon, .days-left-icon {
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+  }
+
+.days-left{
+    color: hsl(215, 51%, 70%);
+}
+
+.line {
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    border: 0;
+    width: 95%;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.author-icon{
+    width: 30px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: -50px;
+}
+
+.author p{
+    color: hsl(215, 51%, 70%);
+}
+.author span{
+    color: hsl(0, 0%, 100%);
+}
+
+.author span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
