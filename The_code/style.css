@@ -22,8 +22,13 @@ body{
     height: 550px;
 }
 
+/*
+    start of code suggested by https://www.frontendmentor.io/profile/ahmedafsa
+*/
+
 .equilibrium{
-    display: flex;
+    position: relative;
+    overflow: hidden;
     max-height: 280px;
 }
 
@@ -31,24 +36,33 @@ body{
     height: 100%;
     border-radius: 10px;
 }
-
+/*
+    The transparency in the overlay div background comes from adjusting 
+    the Alpha in the color code to 0.4 (40%), ensuring it doesn't impact 
+    the view icon opacity.
+*/
 .overlay{
-    transition: .5s ease;
-    opacity: 0;
+    background: hsla(178, 100%, 50%, 0.4);
     position: absolute;
-    height: 280px;
-    width: 280px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
     border-radius: 10px;
-    background-color: hsl(178, 100%, 50%);
 }
 
-.equilibrium:hover .image-equilibrium{
-    opacity: 0.5;
+.overlay:hover{
+    opacity: 1;
 }
 
-.equilibrium:hover .overlay{
-    opacity: 0.5;
-}
+/*
+    end of code suggested by https://www.frontendmentor.io/profile/ahmedafsa
+*/
 
 .icon-view {
     position: absolute;
@@ -76,6 +90,7 @@ body{
 
 .text h3:hover{
     color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .text p{
@@ -136,6 +151,7 @@ body{
 
 .author span:hover{
     color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .attribution {
